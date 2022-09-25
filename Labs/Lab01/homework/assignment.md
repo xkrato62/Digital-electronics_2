@@ -49,4 +49,4 @@ int main(void)
 ```
 2. Scheme of morse code application
 
-![My_connection](pictures/DE_2_Pull_Up.jpg)
+![My_connection](pictures/DE2_Pull_Up.jpg)
