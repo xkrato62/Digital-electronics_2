@@ -5,7 +5,7 @@
 1. Morse-code letter "A"
 
 
-```
+``` C
 #define LONG_DELAY 250
 #define SHORT_DELAY 100
 #include <avr/io.h>     // AVR device-specific IO definitions
