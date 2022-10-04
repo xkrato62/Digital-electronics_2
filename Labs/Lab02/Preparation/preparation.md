@@ -1,4 +1,4 @@
-**Fill in the following table and enter the number of bits and numeric range for the selected data types defined by C.
+**Fill in the following table and enter the number of bits and numeric range for the selected data types defined by C.**
 
 
 | **Data type** | **Number of bits** |**Range** | **Description** |
