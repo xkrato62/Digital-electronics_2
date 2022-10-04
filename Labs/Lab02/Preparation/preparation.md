@@ -7,3 +7,4 @@
 | float | 8 | 3.4e+38,...,3.4e+38 | Single-precision floating-point |
 | void | 0 | / | function doesnt return a value |
 
+The size of void pointer varies system to system. If the system is 16-bit, size of void pointer is 2 bytes. If the system is 32-bit, size of void pointer is 4 bytes. If the system is 64-bit, size of void pointer is 8 bytes
