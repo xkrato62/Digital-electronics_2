@@ -1,3 +1,6 @@
+**Fill in the following table and enter the number of bits and numeric range for the selected data types defined by C.
+
+
 | **Data type** | **Number of bits** |**Range** | **Description** |
 | :-: | :-: | :-: | :-: |
 | uint8_t | 8 | 0,1,...,255 | unsigned 8-bit integer |
