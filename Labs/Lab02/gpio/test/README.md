@@ -7,9 +7,9 @@
    | **DDRB** | **PORTB** | **Direction** | **Internal pull-up resistor** | **Description** |
    | :-: | :-: | :-: | :-: | :-- |
    | 0 | 0 | input | no | Tri-state, high-impedance |
-   | 0 | 1 | input| yes| |
-   | 1 | 0 | output|no | |
-   | 1 | 1 | output | yes| |
+   | 0 | 1 | input| yes|PXN -> current if ext. pull-down |
+   | 1 | 0 | output|no | LOW output  |
+   | 1 | 1 | output | no|HIGH output|
 
 ### GPIO library
 
