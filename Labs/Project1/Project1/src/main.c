@@ -20,6 +20,12 @@
 
 /* Function definitions ----------------------------------------------*/
 /**********************************************************************
+ * Function: We want use every component including their buttons
+ *           Joystick - display value of x,y axis
+ *           Joystick button - display 0 and change 0 to 1 and on the contrary
+ *           rotary encoder - spin value display e: ... (increse/decrease value) 
+ *           rotary encoder's button - when press - increase from 0 to 24 and according to this value alphabet char is changing
+ * 
  * Purpose:  Use Timer/Counter1 and start ADC conversion every 33 ms.
  *           Display value of our's components
  *           When AD conversion ends, send converted value to LCD screen.
@@ -229,6 +235,7 @@ current_state_en2 = GPIO_read(&PINB,enc_SW_2);      //save value of enc_SW_2 (bu
 
 /**********************************************************************
  * Function: ADC complete interrupt, change ADMUX for (A0,A1)
+ *           static uint8_t channel used for alternating A0,A1
  * Purpose:  Display converted value on LCD screen.
  **********************************************************************/
 ISR(ADC_vect)
