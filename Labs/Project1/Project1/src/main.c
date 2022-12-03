@@ -14,6 +14,7 @@
 #include <gpio.h>           // Use our gpio library
 /*Define -------------------------------------------------------------*/
 #define Js_button PD2       //PD2 is pin where joystick button is connected (SW)
+
 #define enc_SW_2  PB2       //rotary-encoder SW (button) connect to pin PB2
 #define enc_DT_2  PB3       //rotary encoder DT connect to pin PB3
 #define enc_clk_2 PB4       //rotary encoder CLK connect to pin PB4
@@ -32,7 +33,7 @@
  * Returns:  none
  **********************************************************************/
 
-/*Global Para.--------------------------------------------------------*/
+/*Global Parameters--------------------------------------------------------*/
 uint8_t LastState,current_state;          //global variable for rotary encoder for saving it's state
 int8_t counter = 0;                       // invalid value for counter = 0; Variable for counting
 
@@ -137,8 +138,6 @@ char letters[26] = {
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
         'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
         'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
-
-
 
     // Start ADC conversion
     ADCSRA = ADCSRA | (1<<ADSC);
@@ -249,7 +248,7 @@ ISR(ADC_vect)
     // Note that, register pair ADCH and ADCL can be read as a 16-bit value ADC
     if (channel == 0)
     {
-        //set admux back to basic value (A0)
+        //set admux to basic value (A0)
         ADMUX = ADMUX & ~(1<<MUX3 | 1<<MUX2 | 1<<MUX1 | 1<<MUX0);
        //anable ADC module
         ADCSRA = ADCSRA | (1<<ADSC);
