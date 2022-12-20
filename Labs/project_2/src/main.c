@@ -67,7 +67,7 @@ int main(void)
 /*----------------------------------------------------------------------------------------*/
 
     PCICR |= (1<<PCIE0);        // Any change of any enable PCINT[7:0] pins will cause an interrupt                  
-    PCMSK0|= (1<<PCINT4);       // Enable PCINT0 change interrupt
+    PCMSK0|= (1<<PCINT4);       // Enable PCINT4 change interrupt
 
     // Enables interrupts by setting the global interrupt mask
     sei();
